@@ -174,10 +174,10 @@
                 = mail_to @project.user.email, "Send me an email", :target => '_blank'
             - if @project.user.facebook_link
               li.facebook
-                = link_to "Perfil no facebook", @project.user.facebook_link, :target => '_blank'
+                = link_to "Profile on facebook", @project.user.facebook_link, :target => '_blank'
             - if @project.user.twitter
               li.twitter
-                = link_to "Perfil no twitter", @project.user.twitter_link, :target => '_blank'
+                = link_to "Profile on twitter", @project.user.twitter_link, :target => '_blank'
             - if @project.user.other_link
               li.other
                 = link_to @project.user.other_link, @project.user.other_link, :target => '_blank'
