@@ -9,6 +9,7 @@ begin
     :domain         => 'bigcolors.webbyapp.com'
     }
     ActionMailer::Base.delivery_method = :smtp
+    ActionMailer::Base.delivery_method = :smtp
   #end
 rescue
   nil
