@@ -1,0 +1,79 @@
+<header>
+  <nav class="top-nav navbar-inverse">
+    <div class="container">
+      <div class="span4 offset5">
+        <ul class="nav_pr">
+          <li><a href=<%=guidelines_path%>>How it Works</a></li>
+          <li><a href=<%=faq_path%>>Help</a></li>
+          <li><a href="http://talk.excitin.com" target="_blank">Blog</a></li>
+          <%if !current_user%>
+            <li><a href=<%=login_path%>>Sign Up</a></li>
+          <%end%>
+          <%if current_user%>
+            <li><a href=<%=logout_path%>>Logout</a></li>
+          <%end%>
+        </ul>
+      </div>
+      <div class="span2">
+        <ul class="nav nav-pills no-margin">
+          <%if !current_user%>
+          <li class="dropdown"> <a class="dropdown-toggle"
+    data-toggle="dropdown"
+    href="#"> Login <b class="caret"></b> </a>
+            <ul class="dropdown-menu">
+            <div class="login ">
+            <div class="log_btn">
+            <p>Login with </p>
+            <div class="clearfix"></div>
+            <a  href="/auth/facebook" class="fb_log no-margin"><img src="images/twitter_bootstrap/log_fb.jpg" alt="Login With Facebook"></a>
+            <a href="/auth/twitter" class="fb_log"> <img src="images/twitter_bootstrap/log_twit.jpg" alt="login with twitter"></a>
+            <a href="/auth/google" class="fb_log"><img src="images/twitter_bootstrap/log_g.jpg" alt="login with google"></a></div>
+            <div class="clearfix"></div>
+          
+            <div class="hr_line"></div>
+            
+            <p>Login</p><figure><img src="/images/twitter_bootstrap/logo.jpg"></figure>
+            <div class="clearfix"></div>
+
+                <%=form_for(@user=User.new, :url => session_path(@user), :html => {:class => 'login_with_email_form'}) do |f|%>
+    <div class="control-group">
+    <div class="controls no-margin">
+    <%=f.text_field :email, :placeholder => "Email" %>
+    </div>
+    </div>
+    <div class="control-group">
+    <div class="controls no-margin">
+    <%=f.password_field :password, :placeholder => "Password" %>
+    </div>
+    </div>
+    <div class="control-group">
+    <div class="controls no-margin">
+    <%=f.submit "Login", :class => "btn btn-warning" %>
+    </div>
+    </div>
+    <%end%>
+            
+            </div>           
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <%end%>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="span2 no-margin"><a class="logo" href=<%=root_url%>><img src="/images/twitter_bootstrap/logo.jpg" alt="Big colors"></a> </div>
+      <div class="search_wrap">
+        <div class="span6 offset1">
+            <%= form_tag explore_path(:anchor => "search"), :method => 'GET', :class=>'search_input' do%>
+              <%= text_field_tag :search, nil, :placeholder => "Search Startups", :class => "search-cust", :style => "width:361px; height:36px;"%>
+              <%= image_submit_tag("/images/twitter_bootstrap/serch_ico.jpg") %>
+            <%end%>
+        </div>
+        <div class="span3"> <a href="/explore" class="btn btn-warning btn-large"><i class="icon-white icon-th"></i> Explore</a> <a href="/guidelines" class="btn btn-danger btn-large"><i class="icon-white icon-download-alt"></i> Submit</a></div>
+      </div>
+    </div>
+  </section>
+  </div>
+</header>

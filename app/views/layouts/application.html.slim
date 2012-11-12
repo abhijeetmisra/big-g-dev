@@ -16,6 +16,17 @@ html lang="#{I18n.locale}" xmlns:fb="http://ogp.me/ns/fb#"
     /[if lt IE 9]
       = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
 
+    /Twitter Bootstrap specific stuff
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width"
+    = stylesheet_link_tag "twitter_bootstrap/normalize.css"
+    = stylesheet_link_tag "twitter_bootstrap/main.css"
+    = stylesheet_link_tag "twitter_bootstrap/bootstrap.css"
+    = stylesheet_link_tag "twitter_bootstrap/font-awesome.css"
+    = javascript_include_tag "twitter_bootstrap/bootstrap.min.js"
+    = javascript_include_tag "twitter_bootstrap/plugins.js"
+    = javascript_include_tag "twitter_bootstrap/vendor/modernizr-2.6.1.min.js"
+
     /JS libs
     = javascript_include_tag 'jquery-1.7.1.min', 'underscore-min', 'backbone-min', 'mustache', 'jquery-ui-1.8.6.custom.min', 'jquery.numeric', 'jquery.maxlength', 'jquery.timers-1.2', 'timedKeyup', 'waypoints.min', 'jquery.scrollto', 'jquery.jeditable.mini', 'jquery.maskedinput-1.2.2.min', 'jquery.cpf', 'twitter', 'jquery_ujs', 'jquery.ui.datepicker-pt-BR', 'on_the_spot', 'app/loader', 'app/catarse', 'bootstrap'
     /Catarse's Backbone code
