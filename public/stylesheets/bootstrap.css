@@ -10,7 +10,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-menu, output, ruby, section, summary,
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ a img {
 }
 
 /* line 114, ../../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
@@ -1050,7 +1050,32 @@ div.project .box .follow_project:hover {
   border-bottom: 1px #dfdfdf solid;
   margin-left: -10px;
 }
-
+/* line 10, ../../app/stylesheets/miv/_tabs.sass */
+.tab_container nav a {
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -khtml-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 6px 15px;
+  background: #2fb8ac;
+  color: white;
+  font-family: Arial;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
 /* line 22, ../../app/stylesheets/miv/_tabs.sass */
 .tab_container nav a:hover {
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px inset;
@@ -2040,8 +2065,8 @@ table .span12 {
   padding-left: 160px;
 }
 
-/* line 1, ../../app/stylesheets/miv/_dropdown-old.sass */
-.dropdown-old {
+/* line 1, ../../app/stylesheets/miv/_dropdown.sass */
+.dropdown {
   z-index: 999;
   display: none;
   list-style: none;
@@ -2060,26 +2085,26 @@ table .span12 {
   -o-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
 }
-/* line 11, ../../app/stylesheets/miv/_dropdown-old.sass */
-.dropdown-old.user {
+/* line 11, ../../app/stylesheets/miv/_dropdown.sass */
+.dropdown.user {
   margin-left: 192px;
   margin-top: 5px;
 }
-/* line 14, ../../app/stylesheets/miv/_dropdown-old.sass */
-.dropdown-old li {
+/* line 14, ../../app/stylesheets/miv/_dropdown.sass */
+.dropdown li {
   width: 100%;
   text-align: left;
   margin-top: 5px;
   padding: 0 10px;
 }
-/* line 19, ../../app/stylesheets/miv/_dropdown-old.sass */
-.dropdown-old li .small {
+/* line 19, ../../app/stylesheets/miv/_dropdown.sass */
+.dropdown li .small {
   font-family: Lato-Bold;
   font-size: 11px;
   color: #59af6d;
 }
-/* line 23, ../../app/stylesheets/miv/_dropdown-old.sass */
-.dropdown-old li.divider {
+/* line 23, ../../app/stylesheets/miv/_dropdown.sass */
+.dropdown li.divider {
   border-bottom: 1px #e3e2dc solid;
   margin-bottom: 5px;
   margin-top: 15px;
@@ -2095,12 +2120,12 @@ table .span12 {
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 /* line 11, ../../app/stylesheets/miv/_bootstrap.scss */
-.modal-open .dropdown-old-menu {
+.modal-open .dropdown-menu {
   z-index: 2050;
 }
 
 /* line 14, ../../app/stylesheets/miv/_bootstrap.scss */
-.modal-open .dropdown-old.open {
+.modal-open .dropdown.open {
   *z-index: 2050;
 }
 
@@ -4968,7 +4993,7 @@ table .span12 {
 }
 /* line 2333, ../../app/stylesheets/miv/_bootstrap.scss */
 .bootstrap-twitter .btn-group .btn:last-child,
-.bootstrap-twitter .btn-group .dropdown-old-toggle {
+.bootstrap-twitter .btn-group .dropdown-toggle {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
   border-top-right-radius: 4px;
@@ -4988,7 +5013,7 @@ table .span12 {
 }
 /* line 2351, ../../app/stylesheets/miv/_bootstrap.scss */
 .bootstrap-twitter .btn-group .btn.large:last-child,
-.bootstrap-twitter .btn-group .large.dropdown-old-toggle {
+.bootstrap-twitter .btn-group .large.dropdown-toggle {
   -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
   border-top-right-radius: 6px;
@@ -5004,12 +5029,12 @@ table .span12 {
   z-index: 2;
 }
 /* line 2366, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group .dropdown-old-toggle:active,
-.bootstrap-twitter .btn-group.open .dropdown-old-toggle {
+.bootstrap-twitter .btn-group .dropdown-toggle:active,
+.bootstrap-twitter .btn-group.open .dropdown-toggle {
   outline: 0;
 }
 /* line 2369, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group .dropdown-old-toggle {
+.bootstrap-twitter .btn-group .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -5019,19 +5044,19 @@ table .span12 {
   *padding-bottom: 3px;
 }
 /* line 2378, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group .btn-mini.dropdown-old-toggle {
+.bootstrap-twitter .btn-group .btn-mini.dropdown-toggle {
   padding-left: 5px;
   padding-right: 5px;
   *padding-top: 1px;
   *padding-bottom: 1px;
 }
 /* line 2384, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group .btn-small.dropdown-old-toggle {
+.bootstrap-twitter .btn-group .btn-small.dropdown-toggle {
   *padding-top: 4px;
   *padding-bottom: 4px;
 }
 /* line 2388, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group .btn-large.dropdown-old-toggle {
+.bootstrap-twitter .btn-group .btn-large.dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -5040,7 +5065,7 @@ table .span12 {
   *z-index: 1000;
 }
 /* line 2395, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group.open .dropdown-old-menu {
+.bootstrap-twitter .btn-group.open .dropdown-menu {
   display: block;
   margin-top: 1px;
   -webkit-border-radius: 5px;
@@ -5048,7 +5073,7 @@ table .span12 {
   border-radius: 5px;
 }
 /* line 2402, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .btn-group.open .dropdown-old-toggle {
+.bootstrap-twitter .btn-group.open .dropdown-toggle {
   background-image: none;
   -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -5283,44 +5308,44 @@ table .span12 {
   margin-bottom: 1px;
 }
 /* line 2599, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-tabs .dropdown-old-menu,
-.bootstrap-twitter .nav-pills .dropdown-old-menu {
+.bootstrap-twitter .nav-tabs .dropdown-menu,
+.bootstrap-twitter .nav-pills .dropdown-menu {
   margin-top: 1px;
   border-width: 1px;
 }
 /* line 2603, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-pills .dropdown-old-menu {
+.bootstrap-twitter .nav-pills .dropdown-menu {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 2609, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-tabs .dropdown-old-toggle .caret,
-.bootstrap-twitter .nav-pills .dropdown-old-toggle .caret {
+.bootstrap-twitter .nav-tabs .dropdown-toggle .caret,
+.bootstrap-twitter .nav-pills .dropdown-toggle .caret {
   border-top-color: #0088cc;
   border-bottom-color: #0088cc;
   margin-top: 6px;
 }
 /* line 2615, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-tabs .dropdown-old-toggle:hover .caret,
-.bootstrap-twitter .nav-pills .dropdown-old-toggle:hover .caret {
+.bootstrap-twitter .nav-tabs .dropdown-toggle:hover .caret,
+.bootstrap-twitter .nav-pills .dropdown-toggle:hover .caret {
   border-top-color: #005580;
   border-bottom-color: #005580;
 }
 /* line 2620, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-tabs .active .dropdown-old-toggle .caret,
-.bootstrap-twitter .nav-pills .active .dropdown-old-toggle .caret {
+.bootstrap-twitter .nav-tabs .active .dropdown-toggle .caret,
+.bootstrap-twitter .nav-pills .active .dropdown-toggle .caret {
   border-top-color: #333333;
   border-bottom-color: #333333;
 }
 /* line 2624, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav > .dropdown-old.active > a:hover {
+.bootstrap-twitter .nav > .dropdown.active > a:hover {
   color: #000000;
   cursor: pointer;
 }
 /* line 2630, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .nav-tabs .open .dropdown-old-toggle,
-.bootstrap-twitter .nav-pills .open .dropdown-old-toggle,
+.bootstrap-twitter .nav-tabs .open .dropdown-toggle,
+.bootstrap-twitter .nav-pills .open .dropdown-toggle,
 .bootstrap-twitter .nav > .open.active > a:hover {
   color: #ffffff;
   background-color: #999999;
@@ -5755,14 +5780,14 @@ table .span12 {
   margin-right: 0;
 }
 /* line 2998, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .dropdown-old-menu {
+.bootstrap-twitter .navbar .dropdown-menu {
   margin-top: 1px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 3004, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .dropdown-old-menu:before {
+.bootstrap-twitter .navbar .dropdown-menu:before {
   content: '';
   display: inline-block;
   border-left: 7px solid transparent;
@@ -5774,7 +5799,7 @@ table .span12 {
   left: 9px;
 }
 /* line 3015, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .dropdown-old-menu:after {
+.bootstrap-twitter .navbar .dropdown-menu:after {
   content: '';
   display: inline-block;
   border-left: 6px solid transparent;
@@ -5785,7 +5810,7 @@ table .span12 {
   left: 10px;
 }
 /* line 3025, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar-fixed-bottom .dropdown-old-menu:before {
+.bootstrap-twitter .navbar-fixed-bottom .dropdown-menu:before {
   border-top: 7px solid #ccc;
   border-top-color: rgba(0, 0, 0, 0.2);
   border-bottom: 0;
@@ -5793,15 +5818,15 @@ table .span12 {
   top: auto;
 }
 /* line 3032, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar-fixed-bottom .dropdown-old-menu:after {
+.bootstrap-twitter .navbar-fixed-bottom .dropdown-menu:after {
   border-top: 6px solid #ffffff;
   border-bottom: 0;
   bottom: -6px;
   top: auto;
 }
 /* line 3039, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav .dropdown-old-toggle .caret,
-.bootstrap-twitter .navbar .nav .open.dropdown-old .caret {
+.bootstrap-twitter .navbar .nav .dropdown-toggle .caret,
+.bootstrap-twitter .navbar .nav .open.dropdown .caret {
   border-top-color: #ffffff;
   border-bottom-color: #ffffff;
 }
@@ -5811,30 +5836,30 @@ table .span12 {
   filter: alpha(opacity=100);
 }
 /* line 3049, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav .open > .dropdown-old-toggle,
-.bootstrap-twitter .navbar .nav .active > .dropdown-old-toggle,
-.bootstrap-twitter .navbar .nav .open.active > .dropdown-old-toggle {
+.bootstrap-twitter .navbar .nav .open > .dropdown-toggle,
+.bootstrap-twitter .navbar .nav .active > .dropdown-toggle,
+.bootstrap-twitter .navbar .nav .open.active > .dropdown-toggle {
   background-color: transparent;
 }
 /* line 3052, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav .active > .dropdown-old-toggle:hover {
+.bootstrap-twitter .navbar .nav .active > .dropdown-toggle:hover {
   color: #ffffff;
 }
 /* line 3056, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav.pull-right .dropdown-old-menu,
-.bootstrap-twitter .navbar .nav .dropdown-old-menu.pull-right {
+.bootstrap-twitter .navbar .nav.pull-right .dropdown-menu,
+.bootstrap-twitter .navbar .nav .dropdown-menu.pull-right {
   left: auto;
   right: 0;
 }
 /* line 3061, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav.pull-right .dropdown-old-menu:before,
-.bootstrap-twitter .navbar .nav .dropdown-old-menu.pull-right:before {
+.bootstrap-twitter .navbar .nav.pull-right .dropdown-menu:before,
+.bootstrap-twitter .navbar .nav .dropdown-menu.pull-right:before {
   left: auto;
   right: 12px;
 }
 /* line 3066, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .navbar .nav.pull-right .dropdown-old-menu:after,
-.bootstrap-twitter .navbar .nav .dropdown-old-menu.pull-right:after {
+.bootstrap-twitter .navbar .nav.pull-right .dropdown-menu:after,
+.bootstrap-twitter .navbar .nav .dropdown-menu.pull-right:after {
   left: auto;
   right: 13px;
 }
@@ -6481,16 +6506,16 @@ table .span12 {
   margin-bottom: 0;
 }
 /* line 3664, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old {
+.bootstrap-twitter .dropdown {
   position: relative;
 }
 /* line 3667, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-toggle {
+.bootstrap-twitter .dropdown-toggle {
   *margin-bottom: -3px;
 }
 /* line 3671, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-toggle:active,
-.bootstrap-twitter .open .dropdown-old-toggle {
+.bootstrap-twitter .dropdown-toggle:active,
+.bootstrap-twitter .open .dropdown-toggle {
   outline: 0;
 }
 /* line 3674, ../../app/stylesheets/miv/_bootstrap.scss */
@@ -6507,18 +6532,18 @@ table .span12 {
   content: "";
 }
 /* line 3686, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old .caret {
+.bootstrap-twitter .dropdown .caret {
   margin-top: 8px;
   margin-left: 2px;
 }
 /* line 3691, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old:hover .caret,
-.bootstrap-twitter .open.dropdown-old .caret {
+.bootstrap-twitter .dropdown:hover .caret,
+.bootstrap-twitter .open.dropdown .caret {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 /* line 3695, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-menu {
+.bootstrap-twitter .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
@@ -6547,12 +6572,12 @@ table .span12 {
   *border-bottom-width: 2px;
 }
 /* line 3723, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-menu.pull-right {
+.bootstrap-twitter .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
 /* line 3727, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-menu .divider {
+.bootstrap-twitter .dropdown-menu .divider {
   height: 1px;
   margin: 8px 1px;
   overflow: hidden;
@@ -6562,7 +6587,7 @@ table .span12 {
   *margin: -5px 0 5px;
 }
 /* line 3736, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-menu a {
+.bootstrap-twitter .dropdown-menu a {
   display: block;
   padding: 3px 15px;
   clear: both;
@@ -6572,42 +6597,42 @@ table .span12 {
   white-space: nowrap;
 }
 /* line 3747, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old-menu li > a:hover,
-.bootstrap-twitter .dropdown-old-menu .active > a,
-.bootstrap-twitter .dropdown-old-menu .active > a:hover {
+.bootstrap-twitter .dropdown-menu li > a:hover,
+.bootstrap-twitter .dropdown-menu .active > a,
+.bootstrap-twitter .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
   background-color: #0088cc;
 }
 /* line 3752, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old.open {
+.bootstrap-twitter .dropdown.open {
   *z-index: 1000;
 }
 /* line 3755, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old.open .dropdown-old-toggle {
+.bootstrap-twitter .dropdown.open .dropdown-toggle {
   color: #ffffff;
   background: #ccc;
   background: rgba(0, 0, 0, 0.3);
 }
 /* line 3760, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropdown-old.open .dropdown-old-menu {
+.bootstrap-twitter .dropdown.open .dropdown-menu {
   display: block;
 }
 /* line 3763, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .pull-right .dropdown-old-menu {
+.bootstrap-twitter .pull-right .dropdown-menu {
   left: auto;
   right: 0;
 }
 /* line 3768, ../../app/stylesheets/miv/_bootstrap.scss */
 .bootstrap-twitter .dropup .caret,
-.bootstrap-twitter .navbar-fixed-bottom .dropdown-old .caret {
+.bootstrap-twitter .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid #000000;
   content: "\2191";
 }
 /* line 3774, ../../app/stylesheets/miv/_bootstrap.scss */
-.bootstrap-twitter .dropup .dropdown-old-menu,
-.bootstrap-twitter .navbar-fixed-bottom .dropdown-old .dropdown-old-menu {
+.bootstrap-twitter .dropup .dropdown-menu,
+.bootstrap-twitter .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 1px;
@@ -7341,7 +7366,7 @@ table .span12 {
   }
   /* line 4375, ../../app/stylesheets/miv/_bootstrap.scss */
   .bootstrap-twitter .navbar .nav > li > a,
-  .bootstrap-twitter .navbar .dropdown-old-menu a {
+  .bootstrap-twitter .navbar .dropdown-menu a {
     padding: 6px 15px;
     font-weight: bold;
     color: #999999;
@@ -7350,16 +7375,16 @@ table .span12 {
     border-radius: 3px;
   }
   /* line 4383, ../../app/stylesheets/miv/_bootstrap.scss */
-  .bootstrap-twitter .navbar .dropdown-old-menu li + li a {
+  .bootstrap-twitter .navbar .dropdown-menu li + li a {
     margin-bottom: 2px;
   }
   /* line 4387, ../../app/stylesheets/miv/_bootstrap.scss */
   .bootstrap-twitter .navbar .nav > li > a:hover,
-  .bootstrap-twitter .navbar .dropdown-old-menu a:hover {
+  .bootstrap-twitter .navbar .dropdown-menu a:hover {
     background-color: #222222;
   }
   /* line 4390, ../../app/stylesheets/miv/_bootstrap.scss */
-  .bootstrap-twitter .navbar .dropdown-old-menu {
+  .bootstrap-twitter .navbar .dropdown-menu {
     position: static;
     top: auto;
     left: auto;
@@ -7378,12 +7403,12 @@ table .span12 {
     box-shadow: none;
   }
   /* line 4409, ../../app/stylesheets/miv/_bootstrap.scss */
-  .bootstrap-twitter .navbar .dropdown-old-menu:before,
-  .bootstrap-twitter .navbar .dropdown-old-menu:after {
+  .bootstrap-twitter .navbar .dropdown-menu:before,
+  .bootstrap-twitter .navbar .dropdown-menu:after {
     display: none;
   }
   /* line 4412, ../../app/stylesheets/miv/_bootstrap.scss */
-  .bootstrap-twitter .navbar .dropdown-old-menu .divider {
+  .bootstrap-twitter .navbar .dropdown-menu .divider {
     display: none;
   }
   /* line 4416, ../../app/stylesheets/miv/_bootstrap.scss */
@@ -9071,7 +9096,7 @@ body #logos .power a {
   margin-right: 5px;
 }
 /* line 66, ../../app/stylesheets/content/_header.sass */
-#header nav.menu a.my_profile_link .dropdown-old_arrow {
+#header nav.menu a.my_profile_link .dropdown_arrow {
   float: left;
   position: relative;
   margin-top: 7px;

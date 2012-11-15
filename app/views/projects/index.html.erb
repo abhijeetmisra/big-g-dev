@@ -1,0 +1,307 @@
+<section class="main_content">
+  <div class="container">
+    <h4>Selection</h4>
+    <div class="span3 no-margin"><!-- block-->
+        <%= render :partial => 'project', :locals => {:project => @first_project, :custom_class => 'first' } if @first_project%>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3"><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+    
+    <h4>Expiring</h4>
+    <div class="span3 no-margin"><!-- block-->
+        <%- @expiring.each_with_index do |item,i| %>
+          <%== render 'project', :project => item, :custom_class => ((@expiring.length == (i+1) ? 'last' : false) || (i==0 ? 'first' : false))%>
+        <%end%>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3"><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+    
+    
+    <h4>Selection</h4>
+    <div class="span3 no-margin"><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3"><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+    
+    
+        <div class="span3 "><!-- block-->
+      <figure><img src="img/thubm.jpg" alt="img_1"></figure>
+      <div class="p_name">Internet </div>
+      <div class="p_right"><i class=" icon-user"></i>Excitin</div>
+      <div class="span3 no-margin">
+        <div class="progress progress_custome progress-warning progress-striped">
+          <div class="bar" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="span1 text_center no-margin">
+        <h2>00</h2>
+        <p>Days left</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin padding_10">
+        <h2>00</h2>
+        <p>Backed</p>
+      </div><span class="line_vr"></span>
+      <div class="span1 text_center no-margin ">
+        <h2>00</h2>
+        <p>Reached</p>
+      </div>
+    </div><!-- block-->
+   
+   
+   
+   
+          </div>
+        </section>
+        
+      </div>
+    </section></div></section>
+
+    

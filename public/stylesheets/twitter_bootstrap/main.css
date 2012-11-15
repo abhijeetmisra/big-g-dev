@@ -146,7 +146,7 @@ textarea {
 	.p_fs a{}
 
 ul.foot_li li{ list-style:none; list-style-position:outside}
-section.foot_cpyrit{ height:40px; text-align:center; line-height:40px; margin-top:20px; background:url(../img/foot_sec.jpg) repeat;border-top: 1px solid #717171;}
+section.foot_cpyrit{ height:40px; text-align:center; line-height:40px; margin-top:20px; background:url(/images/twitter_bootstrap/foot_sec.jpg) repeat;border-top: 1px solid #717171;}
 .search_b_custom{ background: none repeat scroll 0 0 transparent;
     border: medium none !important;
     font-size: 40px  !important;
@@ -169,11 +169,11 @@ section.mian_content {}
 border-radius: 10px; border:#717171 1px solid; background:#464646; padding: 10px 25px 10px 10px;}
 .social_wrap{ overflow:hidden;}
 .block_style1 h4{ color:#fff;}
-footer{ background:url(../img/footer_bg.png) repeat; color:#cfcfcf}
-.foot_sec{ background:url(../img/foot_sec_bg.jpg) repeat-x top center; height:40px; margin: 10px 0;}
+footer{ background:url(/images/twitter_bootstrap/footer_bg.png) repeat; color:#cfcfcf}
+.foot_sec{ background:url(/images/twitter_bootstrap/foot_sec_bg.jpg) repeat-x top center; height:40px; margin: 10px 0;}
 .foot_wrap{ margin-top:10px;}
 .social { margin-top:10px;}
-.foot_sec_wrap{ margin-top:10px; background:url(../img/foot_sec.jpg) repeat; height:250px; border-top: 1px solid #717171;border-botttom: 1px solid #717171;}
+.foot_sec_wrap{ margin-top:10px; background:url(/images/twitter_bootstrap/foot_sec.jpg) repeat; height:250px; border-top: 1px solid #717171;border-botttom: 1px solid #717171;}
 section.main_content h2{ color:#b3b3b3; margin:0 !important;}
 .line_vr{ border-right: 1px solid #999999;
     float: left;

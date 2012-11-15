@@ -1,0 +1,87 @@
+  <footer> 
+   <div class="foot_wrap">
+   <div class="container">
+    
+    <section class="social ">
+          <div class="span5 no-margin block_style1">
+            <div class="news-letter">
+              <h4>Want to receive news?</h4>
+                <%= form_tag 'http://catarse.mailee.me/go/add_contact_form', id: 'mailee-form', :class => "form-inline no-margin", method: 'post' do %>
+                  <%= hidden_field_tag 'key', '13122d'%>
+                  <%= hidden_field_tag 'url_ok', "http://#{request.env['HTTP_HOST']}/?newsletter=ok"%>
+                  <%= hidden_field_tag 'url_error', "http://#{request.env['HTTP_HOST']}/?newsletter=error"%>
+                  <%= text_field_tag 'email', nil, placeholder: 'email@email.com'%>
+                  <%= submit_tag 'submit', :class => "btn btn_custome btn-warning"%>
+                <%end%>
+            </div>
+          </div>
+          <div class="span6 block_style1">
+            <div class="span3 no-margin ">
+              <h4>Like us on facebook</h4>
+                <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbigcolors.com&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=475623865788897" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+            </div>
+            <div class="span3">
+              <h4>Follow us in</h4>
+              <div class="social_wrap"> 
+                <!--facebook--> 
+                <a class="icon-facebook-sign p_fs" href="http://facebook.com/bigcolors" target="_blank"></a> 
+                <!--twitter--> 
+                <a class="icon-twitter-sign p_fs" href="http://twitter.com/big_colors" target="_blank"></a> 
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+    <div class="foot_sec_wrap">
+    <div class="foot_sec">
+    <div class="container">
+    <div class="span12 no-margin">
+      <div class="span3 no-margin">
+        <h4>Category 1</h4>
+        <ul class="foot_li no-margin">
+          <li>Lorem Ipsum is simply </li>
+          <div class="hr_line"></div>
+          <li>Dummy text of the printing</li>
+          <div class="hr_line"></div>
+          <li>Typesetting industry. </li>
+          <div class="hr_line"></div>
+          <li>Been the industry's standard </li>
+          <div class="hr_line"></div>
+          <li>Dummy text ever since </li>
+          <div class="hr_line"></div>
+          <li>When an unknown printer </li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h4>Category 1</h4>
+        <ul class="foot_li no-margin">
+          <li>Lorem Ipsum is simply </li>
+          <div class="hr_line"></div>
+          <li>Dummy text of the printing</li>
+          <div class="hr_line"></div>
+          <li>Typesetting industry. </li>
+          <div class="hr_line"></div>
+          <li>Been the industry's standard </li>
+          <div class="hr_line"></div>
+          <li>Dummy text ever since </li>
+          <div class="hr_line"></div>
+          <li>When an unknown printer </li>
+        </ul>
+      </div>
+      <div class="span3">
+        <h4> <i class="icon-twitter ico-cust i-orange"></i>Category 1</h4><p>
+        An interview with Nadir Balcikli aka Logorado - http://b2l.me/abr8p3 @logorado</p>
+        <div class="hr_line"></div><p>
+        @JayOatway We'd love to interview you for Bigcolors. We are already talking to Doug White and would love to get inter
+        view you also! </p></div>
+      <div class="span3">
+        <h4> <i class="icon-facebook ico-cust i-orange"></i>Category 1</h4><p>
+        An interview with Nadir Balcikli aka Logorado - http://b2l.me/abr8p3 @logorado</p>
+        <div class="hr_line"></div><p>
+        @JayOatway We'd love to interview you for Bigcolors. We are already talking to Doug White and would love to get inter
+        view you also!</p> </div></div></div></div></div>
+      <div class="clearfix"></div></div></section>
+      <section class="foot_cpyrit">
+        <p class="no-margin"> Copyright © 2012 Bigcolors.       Use of this website constitutes acceptance of our User Agreement and Privacy Policy.</p>
+     </section>
+  </footer>  
